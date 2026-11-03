@@ -1,0 +1,19 @@
+
+services:
+  enigma:
+    image: enigmabbs/enigma-bbs:latest
+    container_name: enigma-bbs
+    restart: unless-stopped
+    stop_grace_period: 30s
+
+    ports:
+      - "8888:8888"
+
+    volumes:
+      - ./config:/enigma-bbs/config
+      - ./db:/enigma-bbs/db
+      - ./logs:/enigma-bbs/logs
+      - ./filebase:/enigma-bbs/filebase
+      - ./art:/enigma-bbs/art
+      - ./mods:/enigma-bbs/mods
+      - ./mail:/mail

@@ -1,0 +1,26 @@
+# List of system folders you don't wanna commit here.
+db/*
+!db/.gitkeep
+
+logs/*
+!logs/.gitkeep
+
+filebase/*
+!filebase/.gitkeep
+
+mail/*
+!mail/.gitkeep
+
+config/*
+!config/config.hjson
+!config/achievements.hjson
+!config/.gitkeep
+
+
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
